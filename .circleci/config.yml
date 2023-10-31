@@ -7,6 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install specific Snyk version
+          command: npm install -g snyk@1.996.0
+      - run:
           name: Install Dependencies
           command: npm install
       - run:
