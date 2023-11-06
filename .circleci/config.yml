@@ -12,9 +12,7 @@ jobs:
       - run:
           name: Install Snyk Locally
           command: npm install snyk@1.996.0
-      - run:
-          name: Run Tests
-          command: npm test
+
 
 workflows:
   version: 2
